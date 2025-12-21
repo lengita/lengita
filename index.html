@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Voyage Madagascar – Explorez l'île Rouge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Madagascar Tours</div>
+        <div class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#offres">Offres</a>
+            <a href="#contact">Réservation</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Découvrez Madagascar autrement</h1>
+        <p>Des circuits uniques entre plages, forêts tropicales et cultures authentiques.</p>
+        <a href="#contact" class="btn-primary">Réserver maintenant</a>
+    </div>
+</header>
+
+<section id="destinations">
+    <h2 class="section-title">Destinations à Madagascar</h2>
+
+    <div class="destinations-grid">
+        <div class="destination-card">
+            <img src="assets/nosybe.jpg" alt="Nosy Be">
+            <h3>Nosy Be</h3>
+            <p>Plages paradisiaques, plongée, îles vierges et ambiance tropicale.</p>
+        </div>
+
+        <div class="destination-card">
+            <img src="assets/baobab.jpg" alt="Allée des Baobabs">
+            <h3>Allée des Baobabs</h3>
+            <p>Le site le plus emblématique de Madagascar, idéal pour les couchers de soleil.</p>
+        </div>
+
+        <div class="destination-card">
+            <img src="assets/tsingy.jpg" alt="Tsingy">
+            <h3>Tsingy de Bemaraha</h3>
+            <p>Un paysage unique au monde classé au patrimoine mondial de l’UNESCO.</p>
+        </div>
+    </div>
+</section>
+
+<section id="offres">
+    <h2 class="section-title">Nos offres</h2>
+
+    <div class="offers-grid">
+        <div class="offer-card">
+            <h3>Nosy Be – 5 jours</h3>
+            <p class="offer-price">à partir de 450 €</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>Sud – RN7 – 10 jours</h3>
+            <p class="offer-price">à partir de 890 €</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>Tsingy – 7 jours</h3>
+            <p class="offer-price">à partir de 760 €</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Réservation</h2>
+
+    <form id="reservationForm" action="reservation.php" method="POST">
+        <label>Nom complet</label>
+        <input type="text" name="nom" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Destination</label>
+        <select name="destination" required>
+            <option value="">Choisissez...</option>
+            <option value="Nosy Be">Nosy Be</option>
+            <option value="RN7">RN7 – Sud</option>
+            <option value="Tsingy">Tsingy</option>
+        </select>
+
+        <label>Date de départ</label>
+        <input type="date" name="date_depart" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="4"></textarea>
+
+        <button type="submit" class="btn-primary">Envoyer la réservation</button>
+    </form>
+
+    <p id="formMessage"></p>
+</section>
+<h2 class="section-title">Nos coordonnées</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+        <div class="contact-info">      
+                <p><strong>Téléphone :</strong> +261 22 222 22</p>
+                <p><strong>Email :</strong> contact@contact.com</p>
+                <p><strong>Adresse :</strong> 10, Avenue du Voyage, 75000 Antananarivo</p>
+                <p><strong>Horaires :</strong> Lun–Sam : 9h00 – 18h30</p>
+        </div>
+    </div>
+  </div>
+</div>    
+<footer>
+    © 2025 Madagascar Tours – Tous droits réservés.
+</footer>
+
+</body>
+</html>
