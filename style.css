@@ -3,6 +3,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.palm   .header {
+  color: #09230F;
+  font-weight: bold;
+}
+
 .destinations-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -26,10 +31,18 @@ header {
     position: relative;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    transition: top 0.3s ease;
+    top: 0;
+    width: 100%; 
+    background-color: #09230F;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 20px 7%;
+    z-index: 1000;
 }
 
 .nav-links a {
@@ -44,12 +57,12 @@ nav {
         }
 
         .nav-links a:hover {
-            color: #ffd34f;
+            color: #09230F;
         }
 
  .hero {
   padding: 7%;
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -64,12 +77,12 @@ nav {
   margin: 0 auto 20px;
 }
 
-.btn-primary {
-    background: #ffcc00;
+.btn-1 {
+    background: #09230F;
     padding: 10px 20px;
     border-radius: 5px;
-    border-color: #ffcc00;
-    color: rgb(20, 18, 18);
+    border-color: #09230F;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
@@ -85,7 +98,7 @@ nav {
     padding: 20px 7%;
 }
 
-.destination-card, .offer-card {
+.destination-card, .offer-card .contact-card{
     background: white;
     padding: 15px;
     border-radius: 8px;
@@ -153,6 +166,8 @@ form button {
 
   .hero h1 {
     font-size: 1.8rem;
+    padding: 15%;
+    margin-top: 80px;
   }
 
   form {
@@ -176,4 +191,12 @@ form button {
     font-size: 0.9rem;
     padding: 10px 20px;
   }
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #09230F;
+  color: #ccc;
 }
