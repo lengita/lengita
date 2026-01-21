@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>DREIKSPALM – Tours operateur</title>
+    <title>DREIECKSPALM – Tours operateur</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body>
 <header>
     <nav>
-        <div class="logo">DREIKSPALM-TOURS</div>
+        <div class="logo">DREIECKSPALM-TOURS</div>
         <div class="nav-links">
             <a href="#accueil">Accueil</a>
             <a href="#destinations">Destinations</a>
@@ -36,169 +36,193 @@
 
     <div class="destinations-grid">
         <div class="destination-card">
-            <img src="assets/nosybe.jpg" alt="Nosy Be">
-            <h3>Nosy Be</h3>
+             <div id="carouselSud" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/horombe.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/LE HAUT PLATEAU VERS LE SUD.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                </div>
+
+                        <!-- Contrôles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSud" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSud" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <h3>Partie SUD</h3>
             <p>Plages paradisiaques, plongée, îles vierges et ambiance tropicale.</p>
         </div>
 
         <div class="destination-card">
-            <img src="assets/baobab.jpg" alt="Allée des Baobabs">
-            <h3>Allée des Baobabs</h3>
+            <div id="carouselOuest" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/baobab.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/IMG-20260119-WA0002.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                </div>
+
+                        <!-- Contrôles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselOuest" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselOuest" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <h3>Partie OUEST</h3>
+            <p>Plages paradisiaques, plongée, îles vierges et ambiance tropicale.</p>
+        </div>
+
+        <div class="destination-card">
+            <div id="carouselEst" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/IMG-20260119-WA0004.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/IMG-20260119-WA0006.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                </div>
+
+                        <!-- Contrôles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEst" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEst" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <h3>Partie EST</h3>
             <p>Le site le plus emblématique de Madagascar, idéal pour les couchers de soleil.</p>
         </div>
 
         <div class="destination-card">
-            <img src="assets/tsingy.jpg" alt="Tsingy">
-            <h3>Tsingy de Bemaraha</h3>
+            <div id="carouselNord" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/IMG-20260119-WA0008.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/IMG-20260119-WA0009.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                </div>
+
+                        <!-- Contrôles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNord" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselNord" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <h3>Partie NORD</h3>
             <p>Un paysage unique au monde classé au patrimoine mondial de l’UNESCO.</p>
         </div>
+    </div>
+    
     </div>
 </section>
 
 <section id="offres">
-    <h2 class="section-title">Nos offres</h2>
+  <h2 class="section-title">Nos offres</h2>
 
-    <div class="offers-grid">
-        <div class="offer-card">
-            <h3>LE HAUT PLATEAU VERS LE SUD : (Rizières en terrasse, maisons typiques)</h3>
-            <p class="text-justify">J1 : ANTANANARIVO
- Arrivée à l’aéroport. Transfert à l’hôtel. Le reste du jour est à votre disposition. Nuitée à l’hôtel.
-J2 : ANTANANARIVO-ANTSIRABE
-Après le petit déjeuner, la route vers Antsirabe. Visite de fabrication de marmite en Aluminium à Ambatolampy. Arrivée à Antsirabe. Nuitée à l’hôtel.
-J3 : ANTSIRABE-RANOMAFANA
- Visite de la ville</p>
- <div class="collapse" id="texteComplet">
-   <p class="text-justify">
- Ranomafana ; Nuitée à l’hôtel.
-J4 : RANOMAFANA Après le petit déjeuner, visite du park Ranomafana. Découverte du Lémurien Aureus. L’après-midi visite du village. Nuitée à l’hôtel.
-J5 : RANOMAFANA-FIANARANTSOA-AMBALAVAO
- Continuation vers Ambalavao. Passage à Fianarantsoa, la capitale Betsileo. Traversée de la région du Vin Malgache. Nuitée à l’hôtel.
-J6 : AMBALAVAO-RANOHIRA
-Après le petit déjeuner, la route pour Ranohira. Passage à Ihosy la capitale de le Tribu Bara. Arrivée à Ranohira. Nuitée à l’hôtel.
-J7 : RANOHIRA-PARK ISALO
-Visite du Park Isalo – La piscine Naturelle vers Namaza. Pause au camping. Possibilité de voir des lémuriens. Retour vers l’hôtel. Nuitée à l’hôtel.
-J8 : RANOHIRA-TULEAR-IFATY
-Après le petit déjeuner la route vers Tuléar : les premiers baobabs, tombeaux typiques Mahafaly. Arrivée à Ifaty. Nuitée à l’hôtel.
-J9 : IFATY
- Après petit déjeuner : visite de la forêt épineuse la matinée.
-J10 :  IFATY
- La journée reste à votre disposition. Activités sur place sont disponibles.
-J11 : IFATY-TULEAR-ANTANANARIVO
- Retour vers Tuléar et transfert à l’aéroport. Vol Tuléar-Antananarivo
-Arrivée et Nuitée à l’hôtel.
-J12 : ANTANANARIVO-EUROPE 
-Transfert à l’aéroport et vol pour l’Europe.
-</p>
- </div>
- <button class="btn-1" data-bs-toggle="collapse" data-bs-target="#texteComplet">
-  Voir plus
-</button>
-            <p class="offer-price"></p>
-        </div>
-
-        <div class="offer-card">
-            <h3>OUEST (Baobabs-Tsingy)</h3>
-            <p class="text-justify">J1 : ANTANANARIVO
-Arrivée et accueil à l’aéroport. Transfert à l’hôtel. Le reste de la journée est à votre disposition. Nuitée à l’hôtel.
-J2 : ANTANANARIVO-ANTSIRABE
-Après le petit déjeuner, la route vers Antsirabe, visite de la fabrication de marmite Alu à Ambatolampy. Arrivée à Antsirabe et nuitée à l’hôtel.
-J3 : ANTSIRABE-MIANDRIVAZO
-Après le petit déjeuner, continuation vers Miandrivazo. Traversée des steppes sur le haut plateau et puis</p>
-<div class="collapse" id="texteComplet">
-    <p class="text-justify"></p> on arrive à
- Miandrivazo. Nuitée à l’hôtel. 
-J4 : MIANDRIVAZO-TSIRIBIHINA
-Après le petit déjeuner, transfert à Masiakampy et voyage à bord en pension complète. La cascade et baignade au cours de route. Nuitée sur les bancs de sable.
-J5 : MIANDRIVAZO-BELO-BEKOPA
-Après le petit déjeuner à bord, continuation vers Belo Tsiribihina. Arrivée à Belo, on prend le 4*4 pour Bekopa (sur 100 Km de piste). Nuitée à l’hôtel.
-J6 : BEKOPA
-Après le petit déjeuner visite des petis Tsingys : formation calcaire spectaculaire.
-J7 : BEKOPAKA-GRAND TSINGY
-Après le petit déjeuner, départ sur 18Km vers les grands Tsingys. Paysage spectaculaire. Montée, escaladé, passage à travers un tunnel naturel. Montée sur une belle vedere Panorama.
-Pause picnic selon le programme retour au parking, et continuation vers Bekopaka. Nuitée à l’hôtel.
-J8 : BEKOPAKA-KIRINDY
-Après le petit déjeuner retour vers Belo Tsiribihina, continuation vers Kirindy, visite nocturne pour voir les microcebus. Nuitée à l’hôtel.
-J9 : KIRINDY-MORONDAVA
-Après le petit déjeuner visite diurne de la forêt Kirindy : possibilité de voir les lémuriens sifaka et les marrons. Et puis ou revient à l’hôtel pause midi. On reprend le 4*4 pour voir les baobabs sacrés et allée des baobabs coucher du soleil à allée des baobabs. Route vers Morondava et nuitée à l’hôtel.
-J10 : MORONDAVA
-La journée reste à votre disposition.
-J11 : MORONDAVA-ANTANANARIVO
-Transfert à l’aéroport et vol Morondava-Antananarivo. Arrivée à Antananarivo, transfert à l’hôtel. Nuitée à l’hôtel.
-J12 : ANTANANARIVO-EUROPE
-Transfert pour l’aéroport et départ pour l’Europe.
-</p>
-</div>
-<button class="btn-1" data-bs-toggle="collapse" data-bs-target="#texteComplet">
-  Voir plus
-</button>
-            <p class="offer-price"></p>
-        </div>
-
-        <div class="offer-card">
-            <h3>L’EST (Indri-Canal Pangalane)</h3>
-            <p class="text-justify">J1 : ANTANANARIVO
-Arrivée à l’aéroport, transfert à l’hôtel. Le reste de la journée est à votre disposition. Nuitée à l’hôtel.
-J2 : ANTANANARIVO-ANDASIBE
-Après le petit déjeuner, la route vers Andasibe. En cours de route, visite de la ferme des reptiles, serpents ect… Continuation vers Andasibe. Arrivée et nuitée à l’hôtel.
-J3 : ANDASIBE-ANKAN’NY NOFY
-Après le peitit déjeuner route vers Manambato où on prend le bateau sur le canal de Pangalanes.</p><div class="collapse" id="texteComplet">
-   <p class="text-justify"> Arrivée au Palmarium et nuitée à l’hôtel.
-J4 : ANKAN’NY NOFY
-Après le petit déjeuner, visite diurne pour voir les Lémuriens (plus de 7 éspèces). Visite nocturne pour observer les « Aye-Aye ». Nuitée à l’hôtel.
-J5 : ANKAN’NY NOFY-TAMATAVE-FENERIVE EST
-Après le petit déjeuner départ en bateau pour Tamatave. Visite du marché d’épices et continuation Fenerive Est.
-J6 : FENERIVE EST-Soaneranivongo-SAINTE MARIE
-Continuation vers Soaneranivongo où on prend le bateau vers Sainte Marie, transfert à l’hôtel. Nuitée à l’hôtel.
-J7 : SAINTE MARIE
-La journée reste à votre disposition.
-J8 : SAINT MARIE-ANTANANARIVO
-Vol pour Antananarivo
-J9 : ANTANANARIVO-VISITE VILLE ANTANANARIVO-ANALAKELY-ANTANINARENINA-HAUTE VILLE-MARCHE ARTISANAL
-J10 : ANTANANARIVO-AMBOHIMANGA
-Après le petit déjeuner, la route vers Ambohimanga (à 20km de Tana) pour visiter la résidence du Roi Andrianampoinimerina et le palais d’été des Reines.
-J11 : ANTANANARIVO-EUROPE
-Après le petit déjeuner, préparation et transfert vers l’aéroport et en vol pour l’Europe.
-</p>
-</div>
-<button class="btn-1" data-bs-toggle="collapse" data-bs-target="#texteComplet">
-  Voir plus
-</button>
-            <p class="offer-price"></p>
-        </div>
-    
-     <div class="offer-card">
-            <h3>Le NORD (Park et Tsingy)</h3>
-            <p class="text-justify">J1 : Arrivée à l’aéroport, transfert à l’hôtel. Le reste de la journée est à votre disposition. Nuitée à l’hôtel.
-J2 : ANTANANARIVO-DIEGO SUAREZ
-Transfert à l’aéroport. Arrivée à Diégo Suarez (Antsiranana). Transfert à l’hôtel et nuitée à l’hôtel.
-J3 : DIEGO- Montagne d’Ambre
-Après le petit déjeuner départ pour montagne d’Ambre. Visite de la forêt tropicale, cascade et picnic pause. Nuitée à l’hôtel.
-J4 : MONTAGNE D’AMBRE-ANKARANA.</p><div class="collapse" id="texteComplet">
-   <p class="text-justify">
-Après le petit déjeuner, la route vers Ankarana, en passant par Anivorano (lac sacrée lieu important pour les gens)
-Arrivée à Ankarana. Nuitée à l’hôtel.
-J5 : ANKARANA
-Visite de l’Ankarana, la matinée : visite de « Tsingy Rary », Perte d’eau et picnic, l’après-midi : visite des grottes et puis retour vers l’hôtel. Nuitée à l’hôtel.
-J6 : ANKARANA-ANKIFY-NOSYBE 
-Après le petit déjeuner, route vers Ankify en passant pour Ambanja où on visite les plantations de Cacao, Vanille, Poivre, d’Ylang Ylang et arrivée à Ankify.
-Traversée en bateau vers NOSY BE. Transfert vers l’hôtel. Nuitée à l’hôtel.
-J7 : NOSY BE
-Après le petit déjeuner, départ pour NOSY KOMBA et NOSY TANY KELY.
-A NOSY KOMBA : visite du lieu, broderies, sculptures, Lémuriens, …
-A TANY KELY : plage, baignade, snorkling…
-J8 : NOSY BE 
-Reste à votre disposition 
-J9 : NOSY BE-EUROPE
-Transfert à l’aéroport. Envol pour l’Europe
-</p>
-</div>
-<button class="btn-1" data-bs-toggle="collapse" data-bs-target="#texteComplet">
-  Voir plus
-</button>
-            <p class="offer-price"></p>
-     </div>
-
+  <div class="offers-grid">
+    <!-- Offre 1 : Sud -->
+    <div class="offer-card d-flex flex-column h-100">
+      <h3>LE HAUT PLATEAU VERS LE SUD</h3>
+      <p class="text-justify">
+        J1 : ANTANANARIVO – Arrivée à l’aéroport, transfert à l’hôtel. Nuitée.<br>
+        J2 : ANTANANARIVO-ANTSIRABE – Route vers Antsirabe, visite à Ambatolampy. Nuitée.<br>
+        J3 : ANTSIRABE-RANOMAFANA – Visite de la ville.
+      </p>
+      <div class="collapse mt-2" id="offreSud">
+        <p class="text-justify">
+          J4 : Ranomafana – Visite du parc.<br>
+          J5 : Ambalavao – Traversée de la région du vin Betsileo.<br>
+          J6 : Ranohira – Découverte du parc Isalo.<br>
+          J7 : Tuléar – Baobabs et tombeaux Mahafaly.<br>
+          J8–12 : Ifaty et retour à Antananarivo.
+        </p>
+      </div>
+      <button class="btn-1 mt-auto" data-bs-toggle="collapse" data-bs-target="#offreSud">
+        Voir plus
+      </button>
     </div>
+
+    <!-- Offre 2 : Ouest -->
+    <div class="offer-card d-flex flex-column h-100">
+      <h3>OUEST (Baobabs-Tsingy)</h3>
+      <p class="text-justify">
+        J1 : ANTANANARIVO – Arrivée et transfert à l’hôtel.<br>
+        J2 : ANTANANARIVO-ANTSIRABE – Route vers Antsirabe, visite artisanale.<br>
+        J3 : ANTSIRABE-MIANDRIVAZO – Traversée des steppes.
+      </p>
+      <div class="collapse mt-2" id="offreOuest">
+        <p class="text-justify">
+          J4 : Tsiribihina – Descente en pirogue.<br>
+          J5–7 : Bekopaka – Petits et Grands Tsingy.<br>
+          J8 : Kirindy – Forêt et faune nocturne.<br>
+          J9 : Morondava – Coucher de soleil à l’allée des Baobabs.<br>
+          J10–12 : Retour à Antananarivo.
+        </p>
+      </div>
+      <button class="btn-1 mt-auto" data-bs-toggle="collapse" data-bs-target="#offreOuest">
+        Voir plus
+      </button>
+    </div>
+
+    <!-- Offre 3 : Est -->
+    <div class="offer-card d-flex flex-column h-100">
+      <h3>L’EST (Indri-Canal Pangalanes)</h3>
+      <p class="text-justify">
+        J1 : ANTANANARIVO – Arrivée et transfert.<br>
+        J2 : ANTANANARIVO-ANDASIBE – Visite de la ferme des reptiles.<br>
+        J3 : ANDASIBE-ANKAN’NY NOFY – Bateau sur le canal.
+      </p>
+      <div class="collapse mt-2" id="offreEst">
+        <p class="text-justify">
+          J4 : Palmarium – Observation des lémuriens.<br>
+          J5–6 : Sainte Marie – Découverte de l’île.<br>
+          J7–10 : Antananarivo – Visite culturelle et historique.<br>
+          J11 : Ambohimanga – Palais royal.<br>
+          J12 : Retour vers l’Europe.
+        </p>
+      </div>
+      <button class="btn-1 mt-auto" data-bs-toggle="collapse" data-bs-target="#offreEst">
+        Voir plus
+      </button>
+    </div>
+
+    <!-- Offre 4 : Nord -->
+    <div class="offer-card d-flex flex-column h-100">
+      <h3>Le NORD (Parc et Tsingy)</h3>
+      <p class="text-justify">
+        J1 : ANTANANARIVO – Arrivée et transfert.<br>
+        J2 : DIEGO SUAREZ – Découverte de la ville.<br>
+        J3 : Montagne d’Ambre – Forêt tropicale et cascades.
+      </p>
+      <div class="collapse mt-2" id="offreNord">
+        <p class="text-justify">
+          J4–5 : Ankarana – Grottes et Tsingy Rary.<br>
+          J6 : Ankify – Plantations de cacao et vanille.<br>
+          J7–8 : Nosy Be – Excursions et plages.<br>
+          J9 : Retour vers l’Europe.
+        </p>
+      </div>
+      <button class="btn-1 mt-auto" data-bs-toggle="collapse" data-bs-target="#offreNord">
+        Voir plus
+      </button>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
@@ -214,9 +238,10 @@ Transfert à l’aéroport. Envol pour l’Europe
         <label>Destination</label>
         <select name="destination" required>
             <option value="">Choisissez...</option>
-            <option value="Nosy Be">Nosy Be</option>
-            <option value="RN7">RN7 – Sud</option>
-            <option value="Tsingy">Tsingy</option>
+            <option value="Nosy Be">LE HAUT PLATEAU VERS LE SUD</option>
+            <option value="RN7">OUEST (Baobabs-Tsingy)</option>
+            <option value="Tsingy">L’EST (Indri-Canal Pangalanes)</option>
+            <option value="Tsingy">Le NORD (Parc et Tsingy)</option>
         </select>
 
         <label>Date de départ</label>
@@ -241,7 +266,7 @@ Transfert à l’aéroport. Envol pour l’Europe
               <div class="card mb-6 box-shadow">
                 <div class="card-body">
                   <p class="card-text">
-                    <p><strong>Téléphone :</strong> +261 34 82 918 77</p>
+                    <p><strong>Téléphone : </strong><a href="tel:+261348291877">+261 34 82 918 77</a></p>
                     <p><strong>Adresse :</strong> 10, Avenue du Voyage, 75000 Antananarivo</p>
                     <p><strong>Horaires :</strong> Lun–Sam : 9h00 – 18h30</p></p>
                 </div>
@@ -253,8 +278,8 @@ Transfert à l’aéroport. Envol pour l’Europe
                   <div class="col-sm-4 offset-md-1 py-4">
                     <h3>suivez-nous</h3>
         <ul class="list-unstyled">
-                <li><a href="https://www.facebook.com/share/1AUjoLrdqS/" class="text-palm">Like on Facebook</a></li>
-                <li><a href="#" class="text-palm">Email me</a></li>
+                <li><a href="https://www.facebook.com/share/1AUjoLrdqS/" class="text-primary">Like on Facebook</a></li>
+                <li><a href="mailto:dreiekspalm@gmail.com" class="text-primary">Email me</a></li>
         </ul>
     </div>
                   

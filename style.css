@@ -57,7 +57,8 @@ nav {
         }
 
         .nav-links a:hover {
-            color: #09230F;
+            color: #ffffff;
+            font-weight: bold;
         }
 
  .hero {
@@ -103,6 +104,12 @@ nav {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-item img {
+  height: 200px;        /* choisis la hauteur qui convient */
+  object-fit: cover;    /* recadre l’image sans la déformer */
+  width: 100%;          /* occupe toute la largeur */
 }
 
 form {
@@ -168,6 +175,11 @@ form button {
     font-size: 1.8rem;
     padding: 15%;
     margin-top: 80px;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  
   }
 
   form {
