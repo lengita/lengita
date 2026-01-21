@@ -1,3 +1,4 @@
+    //carousel
 document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(button => {
   button.addEventListener('click', function() {
     const target = document.querySelector(this.getAttribute('data-bs-target'));
