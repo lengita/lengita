@@ -1,4 +1,7 @@
-    //carousel
+let lastScroll = 0;
+const nav = document.querySelector("nav");
+
+//carousel
 document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(button => {
   button.addEventListener('click', function() {
     const target = document.querySelector(this.getAttribute('data-bs-target'));
@@ -12,6 +15,22 @@ document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(button => {
       this.textContent = "Voir plus";
     });
   });
+});
+
+
+
+window.addEventListener("scroll", () => {
+  let currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // On descend → cacher la nav
+    nav.style.top = "-70px"; // hauteur de la nav
+  } else {
+    // On monte ou on arrête → montrer la nav
+    nav.style.top = "0";
+  }
+
+  lastScroll = currentScroll;
 });
 
 document.getElementById("reservationForm").addEventListener("submit", function(e) {

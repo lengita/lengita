@@ -1,9 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-}
+}   
 
-.palm   .header {
+.header {
   color: #09230F;
   font-weight: bold;
 }
@@ -199,7 +199,7 @@ form button {
     padding: 0 10px;
   }
 
-  .btn-primary {
+  .btn-1 {
     font-size: 0.9rem;
     padding: 10px 20px;
   }
