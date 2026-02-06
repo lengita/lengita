@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
 
   if (currentScroll > lastScroll) {
     // On descend → cacher la nav
-    nav.style.top = "-70px"; // hauteur de la nav
+    nav.style.top = "-100px"; // hauteur de la nav
   } else {
     // On monte ou on arrête → montrer la nav
     nav.style.top = "0";
