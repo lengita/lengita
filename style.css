@@ -23,6 +23,14 @@ a {
             text-decoration: none;
             color: inherit;
         }
+        
+section {
+  scroll-margin-top: 80px; /* hauteur de ta navbar */
+}
+
+#accueil {
+  padding-top: 80px; /* hauteur de ta navbar */
+}
 
 header {
     background: url("assets/couverture.jpg") center/cover no-repeat;
@@ -31,51 +39,25 @@ header {
     position: relative;
 }
 
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    transition: top 0.3s ease;
-    top: 0;
-    width: 100%; 
-    background-color: #09230F;
-     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 20px 7%;
-    z-index: 1000;
-}
-
-.nav-links a {
-    margin-left: 20px;
-    color: white;
-}
-
-.nav-links a {
-            margin-left: 20px;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-        }
-
-        .nav-links a:hover {
-            color: hsl(34, 94%, 50%);
-            font-weight: bold;
-        }
-
- .hero {
+#hero {
   padding: 7%;
-  margin-top: 60px;
+  margin-top: 5px;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
+#hero h1 {
+  font-size: 2.3rem;
   margin-bottom: 10px;
 }
 
-.hero p {
+#hero p {
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto 20px;
+}
+
+#hero.hidden {
+  display: none;
 }
 
 .btn-1 {
@@ -157,24 +139,129 @@ form button {
             font-size: 0.95rem;
         }
 
+.navbar-toggle.active {
+  transform: rotate(90deg); /* effet visuel quand le menu est ouvert */
+}
+
+/* Navbar de base */
+.navbar {
+  position: -webkit-sticky;   
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #09230F; 
+  color: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Menu horizontal par défaut (PC) */
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s, background 0.3s;
+}
+
+/* Lien actif ou sélectionné en orange */
+.navbar-menu li a.active,
+.navbar-menu li a:hover {
+  color: rgb(255, 166, 0); /* orange */
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}
+
+/* Bouton hamburger caché en PC */
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* Décalage du contenu pour ne pas être caché par la navbar */
+body {
+  margin: 0;
+  padding-top: 0px; /* hauteur de la navbar */
+}
+
+/* Navbar de base */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background:#09230F; /* vert palm */
+  color: #fff;
+}
+
+/* Menu horizontal par défaut (PC) */
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s, background 0.3s;
+}
+
+/* Lien actif ou sélectionné en orange */
+.navbar-menu li a.active,
+.navbar-menu li a:hover {
+  color: rgb(255, 166, 0);
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff; /* blanc par défaut */
+  cursor: pointer;
+}
+
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
+     .navbar-menu {
+    display: none; /* caché par défaut */
+    flex-direction: column; /* vertical en mobile */
+    gap: 10px;
+    background: #09230F; /* toujours vert palm */
+    padding: 10px;
   }
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+  .navbar-menu.active {
+    display: flex; /* affiché quand toggle actif */
+  }
+
+  .navbar-toggle {
+    display: block; /* bouton visible en mobile */
   }
 
   .hero h1 {
-    font-size: 1.8rem;
-    padding: 13%;
-    margin-top: 80px;
+    font-size: 1.2rem;
+    padding: 5%;
+    margin-top: 20px
   }
 
   .carousel-item img {

@@ -1,5 +1,8 @@
 let lastScroll = 0;
 const nav = document.querySelector("nav");
+const toggleBtn = document.getElementById("navbarToggle");
+const menu = document.getElementById("navbarMenu");
+const hero = document.getElementById("hero");
 
 //carousel
 document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(button => {
@@ -47,4 +50,29 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
 
     formMessage.style.color = "green";
     formMessage.textContent = "Envoi en cours...";
+});
+
+// Toggle du menu
+toggleBtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+
+  if (menu.classList.contains("active")) {
+    toggleBtn.textContent = "x"; // croix quand ouvert
+    toggleBtn.style.color = "rgb(255, 166, 0)"; // orange
+     hero.classList.add("hidden"); // cacher le hero
+  } else {
+    toggleBtn.textContent = "☰"; // hamburger quand fermé
+    toggleBtn.style.color = "rgb(255, 166, 0)"; // orange (toujours orange)
+    hero.classList.remove("hidden"); // réafficher le hero
+  }
+});
+
+// Fermer le menu quand on clique sur un lien
+document.querySelectorAll("#navbarMenu a").forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("active");
+    toggleBtn.textContent = "☰"; // retour au hamburger
+    toggleBtn.style.color = "rgb(255, 166, 0)"; // orangehero.classList.remove("hidden"); // réafficher le hero
+    hero.classList.remove("hidden"); // réafficher le hero
+  });
 });
